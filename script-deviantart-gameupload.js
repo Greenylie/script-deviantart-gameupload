@@ -66,55 +66,39 @@ waitForKeyElements ("a[data-size='0']", //Waits for Original Size Choice and cli
 
 waitForKeyElements ("div[class='ile-publish-bubble']", GameIdentifier);
 
-let game;
+let gamegallery;
 let accomplishment = false;
 
 function GameIdentifier(jNode) {
     let desc, tags;
     let title = document.querySelector("input[title='Title']").value;
 
-    if (title.includes("APlagueTale Innocence"))
-    {
-        desc = "A Plague Tale Innocence (PC 1080=>4k PNG)\nUpscale process executed by Topaz Gigapixel AI";
-        tags = "aplaguetale,plague,videogame,xbox,xboxgamepass,HugoDeRune,AmiciaDeRune,videogames,gaming,rats,gamingcharacter,gamingwallpaper,video_games";
-        game = "A Plague Tale Innocence";
-    }
-    else if (title.includes("Horizon Forbidden West"))
-    {
-        desc = "Horizon Forbidden West (PS5 4K PNG)";
-        tags = "horizonzerodawn,horizon_zero_dawn,aloyhorizonzerodawn,aloyhorizon,aloy,robots,machines,playstation,ps5,ps4exclusive,gaming,videogames,gamingcharacter,horizonfobiddenwest,forbiddenwest";
-        game = "Horizon Forbidden West";
-    }
-    else if (title.includes("Horizon Zero Dawn"))
-    {
-        desc = "Horizon Zero Dawn Complete Edition (PS5 4K PNG)";
-        tags = "horizonzerodawn,horizon_zero_dawn,aloyhorizonzerodawn,aloyhorizon,aloy,robots,machines,playstation,ps5,ps4exclusive,gaming,videogames,gamingcharacter";
-        game = "Horizon Zero Dawn";
-    }
-    else if (title.includes("Ghost of Tsushima"))
-    {
-        desc = "Ghost of Tsushima Director's Cut (PS5 4K PNG)";
-        tags = "ghostoftsushima,ghost_of_tsushima,jinsakai,samurai,japan,playstation,ps5,ps4exclusive,gaming,videogames,gamingcharacter";
-        game = "Ghost of Tsushima";
-    }
-    else if (title.includes("Assassin's Creed"))
-    {
-        desc = "Assassin's Creed: The Ezio Collection (PS5 4K PNG)";
-        tags = "assassinscreed,ezioauditore,ezioauditoredafirenze,playstation,playstation5,ps5,gamingcharacter,gaming,videogames";
-        game = "Assassin's Creed";
-    }
-    else if (title.includes("ELDEN RING"))
-    {
-        desc = "Elden Ring (PS5 4K PNG)";
-        tags = "eldenring,fromsoftware,darkfantasy,soulslike,playstation,playstation5,ps5,gamingcharacter,gaming,videogames";
-        game = "Elden Ring";
-    }
-    else if (title.includes("No Man's Sky"))
-    {
-        desc = "No Man's Sky (PS5 4K PNG)";
-        tags = "nomanssky,spaceship,space,planet,gaming,videogames,ps5,playstation,exploration";
-        game = "No Man's Sky";
-    }
+
+    fetch('https://raw.githubusercontent.com/Greenylie/script-deviantart-gameupload/main/game-info.json')
+    .then(response => response.json())
+    .then(data => {
+
+        var i = data.games.length;
+        data.games.forEach((element) =>{
+            if (title.includes(element.search))
+            {
+                desc = element.description;
+                tags = element.tags;
+                gamegallery = element.gallery;
+                i--;
+                return;
+            }
+
+            if (i == data.games.length)
+            {
+                desc = data.default.description;
+                gamegallery = data.default.gallery;
+                tags = data.default.tags;
+            }
+        })
+    });
+
+    
 
     let buttonDesc = document.createElement('button');
     let buttonTags = document.createElement('button');
@@ -191,34 +175,7 @@ function AutoGalleries(jNode) {
             SwitchGallery("Close-ups");
         }
 
-        if (game == 'Horizon Zero Dawn' || game == 'Horizon Forbidden West')
-        {
-            SwitchGallery("Horizon");
-        }
-        else if (game == 'A Plague Tale Innocence')
-        {
-            SwitchGallery('A Plague Tale');
-        }
-        else if (game == 'Ghost of Tsushima')
-        {
-            SwitchGallery('Ghost of Tsushima');
-        }
-        else if (game == "Assassin's Creed")
-        {
-            SwitchGallery("Assassin's Creed");
-        }
-        else if (game == "Elden Ring")
-        {
-            SwitchGallery("Elden Ring");
-        }
-        else if (game == "No Man's Sky")
-        {
-            SwitchGallery("No Man's Sky");
-        }
-        else
-        {
-            SwitchGallery("Other Games");
-        }
+        SwitchGallery(gamegallery);
 
        if (!accomplishment && !confirm('Add to Featured gallery?')) {
         SwitchGallery("Featured");

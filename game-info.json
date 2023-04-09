@@ -1,52 +1,51 @@
 {
-    "games": [
+    "games":[
        {
-          "game":"A Plague Tale Innocence",
+          "gallery":"A Plague Tale",
           "description":"A Plague Tale Innocence (PC 1080:>4k PNG)\nUpscale process executed by Topaz Gigapixel AI",
           "tags":"aplaguetale,plague,videogame,xbox,xboxgamepass,HugoDeRune,AmiciaDeRune,videogames,gaming,rats,gamingcharacter,gamingwallpaper,video_games",
           "search":"APlagueTale Innocence"
        },
        {
-          "game":"Horizon Forbidden West",
-          "description":"Horizon Forbidden West (PS5 4K PNG)",
-          "tags":"horizonzerodawn,horizon_zero_dawn,aloyhorizonzerodawn,aloyhorizon,aloy,robots,machines,playstation,ps5,ps4exclusive,gaming,videogames,gamingcharacter,horizonfobiddenwest,forbiddenwest",
-          "search":"Horizon Forbidden West"
-       },
-       {
-          "game":"Horizon Zero Dawn",
-          "description":"Horizon Zero Dawn Complete Edition (PS5 4K PNG)",
-          "tags":"horizonzerodawn,horizon_zero_dawn,aloyhorizonzerodawn,aloyhorizon,aloy,robots,machines,playstation,ps5,ps4exclusive,gaming,videogames,gamingcharacter",
-          "search":"Horizon Zero Dawn"
-       },
-       {
-          "game":"Ghost of Tsushima",
-          "description":"Ghost of Tsushima Director's Cut (PS5 4K PNG)",
-          "tags":"ghostoftsushima,ghost_of_tsushima,jinsakai,samurai,japan,playstation,ps5,ps4exclusive,gaming,videogames,gamingcharacter",
-          "search":"Ghost of Tsushima"
-       },
-       {
-          "game":"Assassin's Creed",
+          "gallery":"Assassin's Creed",
           "description":"Assassin's Creed: The Ezio Collection (PS5 4K PNG)",
           "tags":"assassinscreed,ezioauditore,ezioauditoredafirenze,playstation,playstation5,ps5,gamingcharacter,gaming,videogames",
           "search":"Assassin's Creed"
        },
        {
-          "game":"Elden Ring",
+          "gallery":"Elden Ring",
           "description":"Elden Ring (PS5 4K PNG)",
           "tags":"eldenring,fromsoftware,darkfantasy,soulslike,playstation,playstation5,ps5,gamingcharacter,gaming,videogames",
           "search":"ELDEN RING"
        },
        {
-          "game":"No Man's Sky",
+          "gallery":"Ghost of Tsushima",
+          "description":"Ghost of Tsushima Director's Cut (PS5 4K PNG)",
+          "tags":"ghostoftsushima,ghost_of_tsushima,jinsakai,samurai,japan,playstation,ps5,ps4exclusive,gaming,videogames,gamingcharacter",
+          "search":"Ghost of Tsushima"
+       },
+       {
+          "gallery":"Horizon",
+          "description":"Horizon Forbidden West (PS5 4K PNG)",
+          "tags":"horizonzerodawn,horizon_zero_dawn,aloyhorizonzerodawn,aloyhorizon,aloy,robots,machines,playstation,ps5,ps4exclusive,gaming,videogames,gamingcharacter,horizonfobiddenwest,forbiddenwest",
+          "search":"Horizon Forbidden West"
+       },
+       {
+          "gallery":"Horizon",
+          "description":"Horizon Zero Dawn Complete Edition (PS5 4K PNG)",
+          "tags":"horizonzerodawn,horizon_zero_dawn,aloyhorizonzerodawn,aloyhorizon,aloy,robots,machines,playstation,ps5,ps4exclusive,gaming,videogames,gamingcharacter",
+          "search":"Horizon Zero Dawn"
+       },
+       {
+          "gallery":"No Man's Sky",
           "description":"No Man's Sky (PS5 4K PNG)",
           "tags":"nomanssky,spaceship,space,planet,gaming,videogames,ps5,playstation,exploration",
           "search":"No Man's Sky"
        }
     ],
-    "default":
-    {
-        "game": "Other",
-        "description": " (PS5 4K PNG)",
-        "tags": "playstation,playstation5,ps5,gaming,videogames,gamingcharacter"
+    "default":{
+       "gallery":"Other Games",
+       "description":" (PS5 4K PNG)",
+       "tags":"playstation,playstation5,ps5,gaming,videogames,gamingcharacter"
     }
  }
