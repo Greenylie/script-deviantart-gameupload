@@ -1,0 +1,44 @@
+{
+    "APlagueTale Innocence":
+    {
+        "description" : "A Plague Tale Innocence (PC 1080:>4k PNG)\nUpscale process executed by Topaz Gigapixel AI",
+        "tags" : "aplaguetale,plague,videogame,xbox,xboxgamepass,HugoDeRune,AmiciaDeRune,videogames,gaming,rats,gamingcharacter,gamingwallpaper,video_games",
+        "game" : "A Plague Tale Innocence"
+    },
+    "Horizon Forbidden West":
+    {
+        "description" : "Horizon Forbidden West (PS5 4K PNG)",
+        "tags" : "horizonzerodawn,horizon_zero_dawn,aloyhorizonzerodawn,aloyhorizon,aloy,robots,machines,playstation,ps5,ps4exclusive,gaming,videogames,gamingcharacter,horizonfobiddenwest,forbiddenwest",
+        "game" : "Horizon Forbidden West"
+    },
+    "Horizon Zero Dawn":
+    {
+        "description" : "Horizon Zero Dawn Complete Edition (PS5 4K PNG)",
+        "tags" : "horizonzerodawn,horizon_zero_dawn,aloyhorizonzerodawn,aloyhorizon,aloy,robots,machines,playstation,ps5,ps4exclusive,gaming,videogames,gamingcharacter",
+        "game" : "Horizon Zero Dawn"
+    },
+    "Ghost of Tsushima":
+    {
+        "description" : "Ghost of Tsushima Director's Cut (PS5 4K PNG)",
+        "tags" : "ghostoftsushima,ghost_of_tsushima,jinsakai,samurai,japan,playstation,ps5,ps4exclusive,gaming,videogames,gamingcharacter",
+        "game" : "Ghost of Tsushima"
+    },
+    "Assassin's Creed":
+    {
+        "description" : "Assassin's Creed: The Ezio Collection (PS5 4K PNG)",
+        "tags" : "assassinscreed,ezioauditore,ezioauditoredafirenze,playstation,playstation5,ps5,gamingcharacter,gaming,videogames",
+        "game" : "Assassin's Creed"
+    },
+    "ELDEN RING":
+    {
+        "description" : "Elden Ring (PS5 4K PNG)",
+        "tags" : "eldenring,fromsoftware,darkfantasy,soulslike,playstation,playstation5,ps5,gamingcharacter,gaming,videogames",
+        "game" : "Elden Ring"
+    },
+    "No Man's Sky":
+    {
+        "description" : "No Man's Sky (PS5 4K PNG)",
+        "tags" : "nomanssky,spaceship,space,planet,gaming,videogames,ps5,playstation,exploration",
+        "game" : "No Man's Sky"
+    }
+}
