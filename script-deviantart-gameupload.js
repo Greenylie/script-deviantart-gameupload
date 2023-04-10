@@ -20,55 +20,6 @@ function SwitchGallery(galleryname) {
     Array.from(document.querySelectorAll('label')).find(el => el.textContent === galleryname).parentElement.firstElementChild.click();
 }
 
-//User Snag on StackOverflow
-function simulateMouseClick(targetNode) {
-    function triggerMouseEvent(targetNode, eventType) {
-        var clickEvent = document.createEvent('MouseEvents');
-        clickEvent.initEvent(eventType, true, true);
-        targetNode.dispatchEvent(clickEvent);
-    }
-    ["mouseover", "mousedown", "mouseup", "click"].forEach(function(eventType) {
-        triggerMouseEvent(targetNode, eventType);
-    });
-}
-
-function copyToClipboard(text) {
-    var dummy = document.createElement("textarea");
-    // to avoid breaking orgain page when copying more words
-    // cant copy when adding below this code
-    // dummy.style.display = 'none'
-    document.body.appendChild(dummy);
-    //Be careful if you use texarea. setAttribute('value', value), which works with "input" does not work with "textarea". – Eduard
-    dummy.value = text;
-    dummy.select();
-    document.execCommand("copy");
-    document.body.removeChild(dummy);
-}
-
-//Code
-
-waitForKeyElements ("a[data-meta]", //Waits for Show Advanced Options button and clicks it
-                    function AdvancedOptions (jNode) {
-    document.querySelector("a[data-meta]").click();
-});
-
-waitForKeyElements ("a[class='ile-resize-button smbutton smbutton-white smbutton-stash-white']", //Waits for Size window panel and clicks it
-                    function SelectSize (jNode) {
-    simulateMouseClick(document.querySelector("a[class='ile-resize-button smbutton smbutton-white smbutton-stash-white']"));
-});
-
-waitForKeyElements ("a[data-size='0']", //Waits for Original Size Choice and clicks it
-                    function OriginalSize (jNode) {
-    document.querySelector("a[data-size='0']").click();
-    if (document.querySelector("a > span[style]").textContent.includes('Original')) {
-    }
-});
-
-waitForKeyElements ("div[class='ile-publish-bubble']", GameIdentifier);
-
-let gamegallery;
-let accomplishment = false;
-
 function GameIdentifier(jNode) {
     let desc, tags;
     let title = document.querySelector("input[title='Title']").value;
@@ -124,7 +75,7 @@ function GameIdentifier(jNode) {
     buttonPlatinum.addEventListener ("click",function () {
         accomplishment = true;
         AutoGalleries();
-        copyToClipboard(game + ' - Platinum - ');
+        copyToClipboard(gamegallery + ' - Platinum - ');
         document.querySelector('input[title="Title"]').select();
     }, false);
 
@@ -152,9 +103,6 @@ function GameIdentifier(jNode) {
     }
 }
 
-
-waitForKeyElements ("button[id='Desc']", AutoGalleries); //Starts the Gallery Selection process
-
 function AutoGalleries(jNode) {
 
     if (accomplishment) {
@@ -170,40 +118,73 @@ function AutoGalleries(jNode) {
             }
         }
 
+        SwitchGallery(gamegallery);
+
         if (confirm("Add to Close-ups gallery?"))
         {
             SwitchGallery("Close-ups");
         }
 
-        SwitchGallery(gamegallery);
-
-       if (!accomplishment && !confirm('Add to Featured gallery?')) {
-        SwitchGallery("Featured");
-       }
+        if (!accomplishment && !confirm('Add to Featured gallery?')) {
+            SwitchGallery("Featured");
+        }
 }
 
-
-/*
-var Desc = document.createElement('textarea');
-    var Tags = document.createElement('textarea');
-    Desc.id = 'Desc';
-    Tags.id = 'Tags';
-    Desc.value = desc;
-    Tags.value = tags;
-    Desc.style = "width: 587px; height: 20px;";
-    Tags.style = "width: 587px; height: 99px;";
-
-    var element = document.getElementById("Desc");
-
-    //If it isn't "undefined" and it isn't "null", then it exists.
-    if(typeof(element) != 'undefined' && element != null){
-    } else{
-        document.getElementById('autocomplete-placebo').appendChild(Desc);
-        document.getElementById('autocomplete-placebo').appendChild(Tags);
+//User Snag on StackOverflow
+function simulateMouseClick(targetNode) {
+    function triggerMouseEvent(targetNode, eventType) {
+        var clickEvent = document.createEvent('MouseEvents');
+        clickEvent.initEvent(eventType, true, true);
+        targetNode.dispatchEvent(clickEvent);
     }
+    ["mouseover", "mousedown", "mouseup", "click"].forEach(function(eventType) {
+        triggerMouseEvent(targetNode, eventType);
+    });
+}
+
+function copyToClipboard(text) {
+    var dummy = document.createElement("textarea");
+    // to avoid breaking orgain page when copying more words
+    // cant copy when adding below this code
+    // dummy.style.display = 'none'
+    document.body.appendChild(dummy);
+    //Be careful if you use texarea. setAttribute('value', value), which works with "input" does not work with "textarea". – Eduard
+    dummy.value = text;
+    dummy.select();
+    document.execCommand("copy");
+    document.body.removeChild(dummy);
+}
+
+function main(jNode)
+{
+    
+    waitForKeyElements ("a[data-meta]",
+    function AdvancedOptions (jNode) {
+        document.querySelector("a[data-meta]").click()
+    } //Waits for Show Advanced Options button and clicks it
+    );
+
+    waitForKeyElements ("a[class='ile-resize-button smbutton smbutton-white smbutton-stash-white']", //Waits for Size window panel and clicks it
+                        function SelectSize (jNode) {
+        simulateMouseClick(document.querySelector("a[class='ile-resize-button smbutton smbutton-white smbutton-stash-white']"));
+    });
+
+    waitForKeyElements ("a[data-size='0']", //Waits for Original Size Choice and clicks it
+                        function OriginalSize (jNode) {
+        document.querySelector("a[data-size='0']").click();
+    if (document.querySelector("a > span[style]").textContent.includes('Original')) {}
+    });
+
+    waitForKeyElements ("div[class='ile-publish-bubble']", GameIdentifier);
+    
+    waitForKeyElements ("button[id='Desc']", AutoGalleries); //Starts the Gallery Selection process
+}
+
+//Code
+let gamegallery;
+let accomplishment = false;
+
+waitForKeyElements("a[data-meta]", main);
 
 
-    Desc.select();
-    Desc.scrollIntoViewIfNeeded();
-*/
 
