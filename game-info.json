@@ -1,51 +1,87 @@
 {
-    "games":[
-       {
-          "gallery":"A Plague Tale",
-          "description":"A Plague Tale Innocence (PC 1080:>4k PNG)\nUpscale process executed by Topaz Gigapixel AI",
-          "tags":"aplaguetale,plague,videogame,xbox,xboxgamepass,HugoDeRune,AmiciaDeRune,videogames,gaming,rats,gamingcharacter,gamingwallpaper,video_games",
-          "search":"APlagueTale Innocence"
-       },
-       {
-          "gallery":"Assassin's Creed",
-          "description":"Assassin's Creed: The Ezio Collection (PS5 4K PNG)",
-          "tags":"assassinscreed,ezioauditore,ezioauditoredafirenze,playstation,playstation5,ps5,gamingcharacter,gaming,videogames",
-          "search":"Assassin's Creed"
-       },
-       {
-          "gallery":"Elden Ring",
-          "description":"Elden Ring (PS5 4K PNG)",
-          "tags":"eldenring,fromsoftware,darkfantasy,soulslike,playstation,playstation5,ps5,gamingcharacter,gaming,videogames",
-          "search":"ELDEN RING"
-       },
-       {
-          "gallery":"Ghost of Tsushima",
-          "description":"Ghost of Tsushima Director's Cut (PS5 4K PNG)",
-          "tags":"ghostoftsushima,ghost_of_tsushima,jinsakai,samurai,japan,playstation,ps5,ps4exclusive,gaming,videogames,gamingcharacter",
-          "search":"Ghost of Tsushima"
-       },
-       {
-          "gallery":"Horizon",
-          "description":"Horizon Forbidden West (PS5 4K PNG)",
-          "tags":"horizonzerodawn,horizon_zero_dawn,aloyhorizonzerodawn,aloyhorizon,aloy,robots,machines,playstation,ps5,ps4exclusive,gaming,videogames,gamingcharacter,horizonfobiddenwest,forbiddenwest",
-          "search":"Horizon Forbidden West"
-       },
-       {
-          "gallery":"Horizon",
-          "description":"Horizon Zero Dawn Complete Edition (PS5 4K PNG)",
-          "tags":"horizonzerodawn,horizon_zero_dawn,aloyhorizonzerodawn,aloyhorizon,aloy,robots,machines,playstation,ps5,ps4exclusive,gaming,videogames,gamingcharacter",
-          "search":"Horizon Zero Dawn"
-       },
-       {
-          "gallery":"No Man's Sky",
-          "description":"No Man's Sky (PS5 4K PNG)",
-          "tags":"nomanssky,spaceship,space,planet,gaming,videogames,ps5,playstation,exploration",
-          "search":"No Man's Sky"
-       }
-    ],
-    "default":{
-       "gallery":"Other Games",
-       "description":" (PS5 4K PNG)",
-       "tags":"playstation,playstation5,ps5,gaming,videogames,gamingcharacter"
+  "default": {
+    "description": " (PS5 4K PNG)",
+    "gallery": "Other Games",
+    "tags": "playstation,playstation5,ps5,gaming,videogames,gamingcharacter"
+  },
+  "games": [
+    {
+      "description": "A Plague Tale Innocence (PC 1080:>4k PNG)\nUpscale process executed by Topaz Gigapixel AI",
+      "gallery": "A Plague Tale",
+      "search": "APlagueTale Innocence",
+      "tags": "aplaguetale,plague,videogame,xbox,xboxgamepass,HugoDeRune,AmiciaDeRune,videogames,gaming,rats,gamingcharacter,gamingwallpaper,video_games"
+    },
+    {
+      "description": "Assassin's Creed: The Ezio Collection (PS5 4K PNG)",
+      "gallery": "Assassin's Creed",
+      "search": "Assassin's Creed The Ezio Collection",
+      "tags": "assassinscreed,ezioauditore,ezioauditoredafirenze,playstation,playstation5,ps5,gamingcharacter,gaming,videogames"
+    },
+    {
+      "description": "Deliver Us Mars (PS5 4K PNG)",
+      "gallery": "Deliver Us",
+      "search": "Deliver Us Mars",
+      "tags": "deliverusthemoon,deliverusmars,space,planets,astronaut,playstation,playstation5,ps5,gamingcharacter,gaming,videogames"
+    },
+    {
+      "description": "Deliver Us The Moon (PS5 4K PNG)",
+      "gallery": "Deliver Us",
+      "search": "Deliver Us The Moon",
+      "tags": "deliverusthemoon,space,planets,astronaut,playstation,playstation5,ps5,gamingcharacter,gaming,videogames,peterparker"
+    },
+    {
+      "description": "Elden Ring (PS5 4K PNG)",
+      "gallery": "Elden Ring",
+      "search": "ELDEN RING",
+      "tags": "eldenring,fromsoftware,darkfantasy,soulslike,playstation,playstation5,ps5,gamingcharacter,gaming,videogames"
+    },
+    {
+      "description": "Ghost of Tsushima Director's Cut (PS5 4K PNG)",
+      "gallery": "Ghost of Tsushima",
+      "search": "Ghost of Tsushima",
+      "tags": "ghostoftsushima,ghost_of_tsushima,jinsakai,samurai,japan,playstation,ps5,ps4exclusive,gaming,videogames,gamingcharacter"
+    },
+    {
+      "description": "Horizon Forbidden West (PS5 4K PNG)",
+      "gallery": "Horizon",
+      "search": "Horizon Forbidden West",
+      "tags": "horizonzerodawn,horizon_zero_dawn,aloyhorizonzerodawn,aloyhorizon,aloy,robots,machines,playstation,ps5,ps4exclusive,gaming,videogames,gamingcharacter,horizonfobiddenwest,forbiddenwest"
+    },
+    {
+      "description": "Horizon Zero Dawn Complete Edition (PS5 4K PNG)",
+      "gallery": "Horizon",
+      "search": "Horizon Zero Dawn",
+      "tags": "horizonzerodawn,horizon_zero_dawn,aloyhorizonzerodawn,aloyhorizon,aloy,robots,machines,playstation,ps5,ps4exclusive,gaming,videogames,gamingcharacter"
+    },
+    {
+      "description": "Marvel's Spiderman Remastered (PS5 4K PNG)",
+      "gallery": "Marvel's Spider-man",
+      "search": "Marvel's Spider-Man Remastered",
+      "tags": "spiderman,marvel,sonyexclusive,playstation,playstation5,ps5,gamingcharacter,gaming,videogames,peterparker"
+    },
+    {
+      "description": "Marvel's Spiderman Miles Morales (PS5 4K PNG)",
+      "gallery": "Marvel's Spider-Man",
+      "search": "Miles Morales",
+      "tags": "spiderman,milesmorales,marvel,sonyexclusive,playstation,playstation5,ps5,gamingcharacter,gaming,videogames,peterparker"
+    },
+    {
+      "description": "No Man's Sky (PS5 4K PNG)",
+      "gallery": "No Man's Sky",
+      "search": "No Man's Sky",
+      "tags": "nomanssky,spaceship,space,planet,gaming,videogames,ps5,playstation,exploration"
+    },
+    {
+      "description": "Tchia (PS5 4K PNG)",
+      "gallery": "Tchia",
+      "search": "Tchia",
+      "tags": "awaceb,tchia,newcaledonia,caledonia,playstation,playstation5,ps5,gamingcharacter,gaming,videogames"
+    },
+    {
+      "description": "The Medium (PS5 4K PNG)",
+      "gallery": "The Medium",
+      "search": "The Medium",
+      "tags": "the medium,xboxgamesstudios,playstation,playstation5,ps5,gamingcharacter,gaming,videogames"
     }
- }
+  ]
+}
